@@ -1,0 +1,20 @@
+{
+  "name": "lec-05",
+  "version": "1.0.0",
+  "description": "setup for the professional beckend project",
+  "license": "ISC",
+  "author": "prince kumar yadav",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
+  }
+}
