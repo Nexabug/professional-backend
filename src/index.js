@@ -13,7 +13,16 @@ const app =express()
 
 
 
-connectDB()
+connectDB() // ye ek function hai jo promise return karega means ham ispe .then() ya async await use kar sakte hai
+.then(()=>{
+    app.listen(process.env.PORT || 8000,()=>{
+        console.log(`app is listing is at http://localhost:${process.env.PORT}`)
+       })
+})
+.catch((err) =>{
+    console.log("err aa gya sir ji",err)
+})
+
 
 
 
